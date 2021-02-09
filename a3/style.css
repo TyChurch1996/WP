@@ -1,0 +1,184 @@
+/*font face required before other styles*/
+@font-face {
+    font-family: headerFont;
+    src: url('../../media/GoudyStM-webfont.woff');
+}
+
+@font-face {
+    font-family: handWritingFont;
+    src: url('../../media/Allura-Regular.otf');
+}
+
+@font-face {
+    font-family: standardFont;
+    src: url('../../media/Antonio-Regular.ttf');
+}
+
+
+/* Insert your styles here */
+html {
+    
+    scroll-behavior: smooth;
+    padding: 10px 10%;
+    background-color: #4A321D;
+    color: #C9CDBA;
+    font-family: standardFont;
+}
+
+body {
+    display: inline-block;
+    padding: 2px 5%;
+    box-sizing: border-box;
+    background-color: #4A321D;
+}
+
+header {
+    font-family: headerFont;
+    padding: 5px;
+    font-size: 400%;
+    font-weight: bold;
+    padding 0px 20%;
+    border: 3px solid #C8C8C8;
+}
+
+header * {
+    vertical-align: middle;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    border: 3px solid #BEC1C4;
+    margin: 1% 0px;
+    padding: 1px;
+
+    display: block;
+
+
+}
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+
+    float: left;
+    padding: 3px 1%;
+}
+
+nav ul li a {
+    background-color: black;
+    text-decoration: underline;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color: black;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 1% 1%;
+    border: 1px solid #C8C8C8;
+    color: #C9CDBA;
+
+
+}
+
+nav ul li a:hover {
+    color: white;
+    border: 3px solid white;
+
+}
+
+main {
+    max-width: 100%;
+
+    margin: 5px 0px;
+    padding: 5px;
+    border: 3px solid #C8C8C8;
+}
+
+#lettersAndPost a {
+    padding: 3px;
+    color: #C9CDBA;
+    border: 1px solid white;
+
+}
+
+#lettersAndPost a:hover {
+
+    color: white;
+    border: 3px solid white;
+}
+
+#linksToRelatedMaterial a {
+    color: #C9CDBA;
+
+}
+
+#linksToRelatedMaterial a:hover {
+    color: white;
+
+}
+
+#descriptionsOfBattleAction a {
+    color: white;
+
+}
+
+#descriptionsOfBattleAction a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+#homeInfo {
+    display: block;
+
+}
+
+#intro,
+#additionalcommentsintro,
+#lettersAndPost,
+#descriptionsOfBattleAction,
+#places,
+#linksToRelatedMaterial,
+#Comments {
+    display: none;
+
+}
+#places{
+
+
+}
+
+#placesList {
+
+
+}
+
+main:link,
+main:visited {
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+
+
+}
+
+
+#additionalcommentsintro {
+    border: 1px solid #C8C8C8;
+    padding: 3px;
+    font-family: handWritingFont;
+    font-size: 150%;
+
+}
+
+footer {
+    padding: 1%;
+    border: 3px solid #C8C8C8;
+
+}

@@ -1,0 +1,241 @@
+/* This stylesheet is for testing CSS, styles here will not be deactivated when toggling wireframe style *./
+
+/* Wireframe toggle button */
+#toggleWireframeCSS {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 6px 10px;
+    opacity: 0.5;
+}
+
+#toggleWireframeCSS:hover {
+    opacity: 1;
+}
+header {
+    background-color: hsl(0, 100%, 97%);
+    border: 5px solid hsl(0, 100%, 60%);
+}
+
+html {
+    background-color: #3C3C3B;
+    min-height: 100vh;
+}
+/*Change All Colours Quickly */
+
+main,
+#about-me,
+body,
+header,
+article,
+footer,
+#more-about-me {
+    display: grid;
+    background-color: #3C3C3B;
+    color: #EBEBD3;
+}
+
+
+nav,
+footer {
+    padding: 10px;
+}
+nav {
+    border: 5px solid hsl(240, 100%, 60%);
+    top: 0px;
+    left: 50%;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+nav a {
+
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/* Order matters when styling hyperlinks: Remember the LoVe HAte rule! */
+nav a:link,
+nav a:visited {
+
+    color: rgb(255, 255, 153);
+    background-color: rgb(0, 0, 0);
+
+}
+
+nav a:hover,
+nav a:active {
+    /* specific css styles are applied when mouse interacts with the link */
+
+    background-color: rgb(255, 255, 153);
+    color: rgb(0, 0, 0);
+
+}
+
+nav ul {
+    padding: 0;
+    margin: 0.2em;
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.2em;
+}
+
+/* Specific nav list elements */
+
+li:first-child a:link,
+li:first-child a:visited {
+    color: rgb(255, 255, 153);
+    text-decoration: underline;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+}
+
+li:first-child a:hover,
+li:first-child a:active {
+
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    padding: 10%;
+}
+
+
+
+li:nth-child(2) a:link,
+li:nth-child(2) a:visited {
+    color: rgb(255, 255, 153);
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+}
+
+li:nth-child(2) a:hover,
+li:nth-child(2) a:active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 153);
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 10%;
+
+}
+
+
+li:last-child a:link,
+li:last-child a:visited {
+    color: rgb(255, 255, 153);
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 75% 30%;
+
+
+}
+
+
+li:last-child a:hover,
+li:last-child a:active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 153);
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 75% 30%;
+
+}
+
+
+
+
+#fixed-content {
+    width: 1000px;
+    margin: 20px;
+    box-sizing: border-box
+}
+
+#adaptable-content {
+    width: 50%;
+    min-width: 600px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+#fine-tuned-content {
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    padding: 5px;
+}
+
+div.card3D {
+    border: dotted black thin;
+    background-color: #ddd;
+    box-sizing: border-box;
+    overflow: auto;
+    height: calc(500% - 10px);
+    width: calc(20% - 10px);
+    padding: 5px;
+    position: relative;
+
+}
+
+
+div.card3D div {
+    border: 4px black groove;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    position: absolute;
+    transition: 4s;
+    backface-visibility: hidden;
+}
+
+div.card3D:hover div:nth-child(1) {
+    transform: rotateY(180deg);
+}
+
+div.card3D:hover div:nth-child(2) {
+    transform: rotateY(360deg);
+}
+
+div.card3D div:nth-child(1) {
+    border-color: red;
+    transform: rotateY(0deg);
+}
+
+div.card3D div:nth-child(2) {
+    border-color: blue;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+}
+
+
+}
+
+.backcolumns {
+    float: left;
+    width: 50%;
+}
+
+#more-about-me {
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 3fr);
+    grid-gap: 0.5em;
+
+
+}
+
+#more-about-me div {
+    border: thin dotted #aaa;
+    padding: 0.5em;
+
+}
+
+#more-about-me div:nth-child(odd) {}
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+
+}

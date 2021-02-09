@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+    <title>My First Webpage</title>
+
+    <!-- Stylesheets, you can have more than one. -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css" />
+    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
+    <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
+    <link id='footercss' type="text/css" rel="stylesheet" href="footer.css">
+
+    <!-- Javascript, you can have more than one. -->
+    <script src='wireframe.js'></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+        <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Ty Church
+        </div>
+    </header>
+
+    <nav>
+        Assignments:
+        <!-- link locations: relative to current directory -->
+        <ul>
+            <li><a href="a2/index.php" target="_blank">A2</a></li>
+            <li><a href="a3/index.php" target="_blank">A3</a></li>
+            <li><a href="a4/index.php" target="_blank">A4</a></li>
+        </ul> |
+        <!-- link locations: relative to e54061's public_html directory -->
+        <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+        <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> |
+        <!-- link location: external -->
+        <a href='https://drive.google.com/open?id=1uSRn6PHDcpsUtmFQ6MPMM-g2go4o22VP' target="_blank">WPOUA-Public</a>
+    </nav>
+
+    <main>
+        <div class='card3D'>
+            <div id='frontcard'>
+                <img src='../media/RMIT-Logo.png'>
+            </div>
+            <div id='backcard'>
+
+                <class id="backcolumns">
+                    <p>Column 1</p>
+                </class>
+
+                <class id="backcolumns">
+                    <p>Column 2</p>
+                </class>
+
+            </div>
+
+        </div>
+
+        <div id='fixed-content'>example content</div>
+        <div id='adaptable-content'>example content</div>
+        <div id='fine-tuned-content'>example content</div>
+        <article id='about-me'>
+            <h2>About me</h2>
+            <p>
+                <img src='../media/avatar.png' width='200' alt='my photo' />
+            </p>
+            <section id="more-about-me">
+                <div>Who is your tutor / instructor</div>
+                <div>Trevor Reynolds</div>
+
+                <div>Who is your labber / workshopper</div>
+                <div>Trevor Reynolds</div>
+
+                <div>Have you any programming or web design experience?</div>
+                <div>Yes i have primarilly, c# (unity and app development) and java </div>
+
+                <div>Do you see yourself as a programmer or designer, or both?</div>
+                <div>a Programmer</div>
+
+                <div>What has brought you to this course at RMIT?</div>
+                <div>After having a long history of programming as a hobby i wanted to do a degree with IT</div>
+
+                <div>What are you hoping to get out of the course?</div>
+                <div>I'm hoping to get a better understanding and further reinforce my IT knowledge</div>
+
+                <div>What websites do you use the most? (NB: "family friendly" !)</div>
+                <div>Family Friendly, Social Media, Programming websites(such as stack overflow a common java help forum)</div>
+
+                <div>Do you have any interests or hobbies?</div>
+                <div>Surfing,SpearFishing,Running and programming(primarilly in c#)</div>
+            </section>
+        </article>
+
+        <article id='project'>
+            <p>In this space you are asked to compose a website analysis and redevelopment proposal for the website found at this location:<br><a href='https://www.sites.google.com/site/anzacdouglasraymondbaker' target='_blank'>ANZAC Douglas Raymond Baker - Letters Home</a>
+                <br>
+            </p>
+            <div style="text-align: center;">
+                <span align="center" style="font-size:30px;">
+                    <u><b>Client Diagnosis</b></u>
+                </span>
+            </div>
+            <br>
+            <p>
+                After analystist of the provided website i have identified the following issues:
+            </p>
+            <span>
+                <u><b>GENERAL ISSUES </b></u>
+            </span>
+
+            <ul>
+                <li>
+                    Poorly Handled Navigation(navigation uses multiple pages opposed to javascript).
+                </li>
+                <li>
+                    Mass Amounts of Spaghetti code(unused or unneeded code).
+                </li>
+                <li>
+                    Additionally css styling contains mass spaghetti code and mass duplicated code/reused code causing further performance issues.
+                </li>
+                <li>
+                    Pointless xml and javascript code which performs additional functions however is irrelevant to the website and has shows no result to user or website.
+                </li>
+                <li>
+                    Xml namespaces are implemented but not needed or used.
+                </li>
+                <li>
+                    Paragraph headings poorly setup(paragraph headings cannot be identified easilly).
+                </li>
+                <li>
+                    Poor Spacing between paragraphs(makes it harder to distinguish between headers and paragraphs).
+                </li>
+                <li>
+                    The html/css code used on this website is poorly formatted from a development perspective and clusters multiple tags together on single lines
+                    <br>
+                    (this makes further improvement on the website or updating comments more time consuming
+                    as finding elements on the website takes longer to find).
+                </li>
+
+                <li>
+                    Duplicate Tags are used (multiple of the same headers).
+                </li>
+
+                <li>
+                    Unneeded font tags(resizing font to the same size when its already set to that size).
+                </li>
+
+                <li>
+                    Header placed off centre resulting in an awkward looking Header.
+                </li>
+
+                <li>
+                    Poorly Chosen colour Scheme.
+                </li>
+
+                <li>
+                    Inline spans placed outside of paragraphs.
+                </li>
+
+                <li>
+                    Large bodies of text outside of paragraphs.
+                </li>
+
+                <li>
+                    Newlines have been given closing tags (not required and creates spaghetti code).
+                </li>
+
+                <li>
+                    Contains un-needed timers which is possible also depreciated code which was left in.
+                </li>
+
+                <li>
+                    No disability option for people who are colour blind which violates the australian web accessibility laws and policies.
+                </li>
+
+            </ul>
+            <p id=GeneralSiteIssues style="width: 75%;">
+                The issues above unless updated and corrected will cause much slower navigation of the website when loading webpages, increased stress on the server as more data is being processed, increased time required to change information on the website due to the spaghetti code currently in-place, Increase the eye Strain of users when viewing the website due to the colour theme, Create a higher power consumption by the server as its processing more data as well as most importantly violate the australian accessibility laws and policies as colorblind people will have difficulty navigating the website as it has not been built to accomodate for people requiring aid with there vision.
+            </p>
+            <br>
+            <span>
+                <b><u>INTRO SPECIFIC ISSUES</u></b>
+            </span>
+
+            <ul>
+                <li>
+                    Specific to this page is the lack of alignment, this is shown within the the written sentances as well as in particular the abbreviation section
+                </li>
+            </ul>
+            <p id=IntroSiteIssues style="width: 75%;">
+                This page has an alignment issue which decreases the readibility of the provided information and as a result will deter users from reading and extracting information from the website unless fixed.
+            </p>
+            <br>
+            <span>
+                <b><u>PLACES SPECIFIC ISSUES</u></b>
+            </span>
+            <ul>
+                <li>
+                    This page has its own additional navigation which is irrelevant to page details and already implemented through the side navigation pane.
+                </li>
+                <li>
+                    Span tag used but not neeeded.
+                </li>
+                <li>
+                    Paragraph elements are not aligned.
+                </li>
+            </ul>
+
+            <p id=PlacesSpecificIssues style="width: 75%;">
+                The Primary Issues with this page is the amount of spaghetti code used, this includes span tags between every word which creates a larger load for the server to process as a result the website will have longer loading times and a higher power consumption for the server in addition to this the website has unlisted and unaligned paragraph elements which retracts from the websites readability detering users from reading through the provided information the site also has additional un-needed navigation which is a minor issue however it retracts from the websites "look" and may result negatively on the design.
+            </p>
+            <span>
+                <b><u>DESCRIPTION OF BATTLE ACTION SPECIFIC ISSUES</u></b>
+            </span>
+            <ul>
+                <li>
+                    This page has its own additional navigation which is irrelevant to page details and already implemented through the side navigation pane.
+                </li>
+            </ul>
+            <p id=BattleSpecificIssues style="width: 75%;">
+                The only issue with this page is the additional navigation which is irrelevant to the website and already implemented in the side navigation pane as a result of this it creates spaghetti code but also may confuse the user as navigation options are already provided and the additional navigation provided is not specific to this webpage.
+            </p>
+            <span>
+                <b><u>COMMENTS SPECIFIC ISSUES</u></b>
+            </span>
+            <ul>
+                <li>
+                    Comments Section Requiring Emails to be updated by the user when this process could be automated.
+                </li>
+                <li>
+                    Email link provided is not an email type and as a result will not redirect the user to directly send an email as a link.
+                </li>
+            </ul>
+            <p id=CommentsSpecificIssues style="width: 75%;">
+                This page is essentially dedicated to user feedback and assists in finding issues to resolve and content to update so as a result it is vital to be updated, manually adding comments via email is a very non-efficient way to handle this when the functionality can be added simply, whilst also providing a contact email the text email can be updated to a link which will allow the user to directly email the provided email providing better user convenience.
+            </p>
+
+            <div style="text-align: center;">
+                <span align="center" style="font-size:30px;">
+                    <u><b>Client Proposal</b></u>
+                </span>
+            </div>
+            <br>
+            <p>
+                My proposal to the client would be to recreate the website from scratch since the code it litered with spaghetti code it would be more time efficient to recreate the website from scratch and move the previously stored data to the recreated website.
+                <br>
+                <br>
+                In order to recreate the website we have to address the previously mentioned issues, the proposed methods for dealing with these would be to:
+                <br>
+                <br>
+                Firstly Restructure the navigation pane to use javascript as this will allow for instantaneous webpage navigation since the page format remains the same throughout the entire web site, by doing this it should make website navigation instantanious as long as the rest of the website maintains good programming practices.
+                <br>
+                <br>
+                The next stage for updating the web site would be to recreate the css styling for the webpage as well as rewrite the html in html5 and implement a better theme which increases readibility and does not place additional strain on the users eyes when implementing this theme we also have to either implement an additional style or make the current style viable for people with disabilities in order for the site to be legally viable.
+                <br>
+                <br>
+                Colour blindness and most other vision disabilities css styling can be switched between easilly with the use of a button if the current style is not implemented in a manor which supports these disabilities.
+                <br>
+                <br>
+                When implementing our header we can centre it with css styling which will give the website a much nicer feel and increase readibilty due to the heuristic design principle recognition rather than Recall which essentially means you want your users to recognise how to navigate rather then learn where things are then have to remember that later.
+                <br>
+                <br>
+                When recreating the intro page we can implement an alignment style tag within the above paragraphs of the page, doing so will ensure our paragraph content starts and stops at the correct place, we can also limit how long we want our sentances by adjusting the width of these paragraphs in a style which neatly lines up all content.
+                <br>
+                <br>
+                Below this we have a list of abbreviations and terms, here we can use a html5 unorder list to ensure the content entered is aligned nicely and increases user readability while letting the user extract the information needed with ease.
+                <br>
+                <br>
+                When Recreating the Places page we can Centre and underline the header to make it stand out from the content while we can use a ordered or unordered list to list all places mentioned in a neater fashion, by doing this the web page will become more user friendly and readable as well as align the content, without this being implemented the current state is quite hard to read and poorly optimized.
+                <br>
+                <br>
+                The final page with large changes required is the comments section which currently requires someone to manually update this page , with the usage of javascript and php we can update the comments section to be automated and user friendly, it is highly recommended to update this section as this is the websites primary feedback source for everything from content recommendations to user errors, currently an email is provided on this page but only as a text styled implementation, an email can still be provided on this page for other enquiries however it is highly recommended to update the text style to an email style to allow users to click an email link and preload the option to send an email to the provided email address.
+
+                <br>
+                <br>
+
+                Since we are recreating the website from scratch this removes the need to remove the previously added spaghetti code and will dramatically decrease our development time as we will no longer have any performance issues and all code updated will be specific to the task at hand with the option to expand further without additional hurdles.
+
+            </p>
+
+        </article>
+    </main>
+
+    <footer>
+        &copy; Ty Church
+        <script>
+            document.write(new Date().getFullYear());
+
+        </script>.
+        Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+    </footer>
+
+</body>
+
+</html>
